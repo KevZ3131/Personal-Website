@@ -3,11 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Faustina:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link href="./style.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl bg-white font-bold">
-    Hello world!
-  </h1>
-</body>
+<body class="bg-softCreamWhite px-5 py-2 md:px-10 lg:px-20 xl:px-40 mx-8 sm:mx-4 md:mx-2 lg:mx-0 font-faustina">
+    <header class="font-faustina">
+      <nav class="h-8 md:h-12 lg:h-16 w-full flex flex-row font-bold text-xl px-1 align-middle">
+        <img src="/images/logo.png" alt="Name" class="w-1/10 h-full"> <!-- Adjusted logo margin -->
+        <ul class="flex flex-row items-center w-full px-10 -mt-0.5 justify-evenly whitespace-nowrap">
+            <li class="relative group">
+              <a href="#" class="text-black">Home</a>
+              <span
+                class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"
+              ></span>
+            </li>
+            <li class="relative group">
+              <a href="#" class="text-black">About</a>
+              <span
+                class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"
+              ></span>
+            </li>
+            <li class="relative group">
+              <a href="#" class="text-black">Services</a>
+              <span
+                class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"
+              ></span>
+            </li>
+            <li class="relative group">
+              <a href="#" class="text-black">Portfolio</a>
+              <span
+                class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"
+              ></span>
+            </li>
+            <li class="relative group">
+              <a href="#" class="text-black">Contact Me</a>
+              <span
+                class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"
+              ></span>
+            </li>
+          </ul>
+          
+      </nav>
+    </header>
+    <main>
+        <section id="About Me" class="flex flex-row h-screen bg-softCreamWhite">
+          <div class="flex mt-24 w-1/2">
+            <div class="w-[38rem] h-[38rem] rounded-full border-4 border-black overflow-hidden">
+              <img src="/images/sampleAvatar.webp" alt="Test" class="w-full h-full object-cover">
+            </div>
+          </div>              
+          <div class="w-full mt-24 p-4 mx-14 text-navyBlue font-serif">
+            <h1 class="text-5xl">👋 Hi, <span class="font-extrabold text-lightCyan">I'm Kevin Tran</span></h1>
+            <p class="text-lg md:text-2xl lg:text-3xl text-gray-800 mt-7 leading-relaxed">
+                I am a <span class="font-semibold text-indigo-600">first-year Computer Engineering student</span> at the <span class="font-semibold text-indigo-600">University of Waterloo</span> and this is my first personal website where you can learn more about me!
+            </p>
+            <h2 class="text-4xl font-bold text-navyBlue mb-3 mt-12">Connect with Me</h2>
+                <ul class="flex justify-start space-x-8">
+                    <li>
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-3xl text-teal-500 hover:text-teal-600">
+                        <i class="fab fa-linkedin"></i> <!-- LinkedIn Icon -->
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://twitter.com/yourprofile" target="_blank" class="text-3xl text-teal-500 hover:text-teal-600">
+                        <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://github.com/yourprofile" target="_blank" class="text-3xl text-teal-500 hover:text-teal-600">
+                        <i class="fab fa-github"></i> <!-- GitHub Icon -->
+                    </a>
+                    </li>
+                    <li>
+                    <a href="https://www.instagram.com/yourprofile" target="_blank" class="text-3xl text-teal-500 hover:text-teal-600">
+                        <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
+                    </a>
+                    </li>
+                    <li>
+                    <a href="mailto:youremail@example.com" class="text-3xl text-teal-500 hover:text-teal-600">
+                        <i class="fas fa-envelope"></i> <!-- Email Icon -->
+                    </a>
+                    </li>
+                </ul>
+            <a href="/path/to/your-resume.pdf" download="Kevin_Tran_Resume.pdf" class="inline-block bg-lightCyan text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-teal-600 transition-all duration-300 mt-12">
+                Download My Resume
+            </a>              
+          </div>
+        </section>  
+      </main>      
+    <footer>
+      <!-- Footer content here -->
+    </footer>
+  </body>
+  
 </html>
