@@ -11,7 +11,8 @@ module.exports = {
         warmBeige: '#F5E9DA',
         softCreamWhite: '#FFFDF8',
         navyBlue: '#1D3C5D',
-        lightCyan: '#4169E1'
+        lightCyan: '#4169E1',
+        midnightBlue: '#191970'
       }
     },
   },
