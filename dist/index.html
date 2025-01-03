@@ -87,10 +87,6 @@
         <span class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"></span>
       </li>
       <li class="relative group">
-        <a href="#services" class="text-black">Services</a>
-        <span class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"></span>
-      </li>
-      <li class="relative group">
         <a href="#portfolio" class="text-black">Portfolio</a>
         <span class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"></span>
       </li>
@@ -203,8 +199,7 @@
                 </div>
               </div> 
             </div>
-          </section>
-          
+          </section> 
           <script>
             var tablinks = document.getElementsByClassName("tab-item");
             var tabcontents = document.getElementsByClassName("tab-contents");
@@ -227,5 +222,72 @@
               document.getElementById(tabname).classList.remove("hidden");
             }
           </script>
+          <section id="portfolio" class="min-h-screen w-full py-16">
+            <h1 class="text-3xl md:text-7xl font-extrabold text-midnightBlue mt-8">Portfolio</h1>
+            <div class="work-list grid grid-cols-3 gap-10 mt-16 h-full">
+              <!-- First Project -->
+              <div class="work relative overflow-hidden h-[44rem] rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500 flex flex-col justify-between">
+                <img
+                  src="/images/aurora1-2048px-6.jpg"
+                  alt="Work 1"
+                  class="block w-full object-center transition-transform duration-300 hover:scale-110 hover:brightness-110 rounded-xl"
+                />
+                <div class="layer absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 transition-opacity duration-500 hover:opacity-100">
+                  <h3 class="font-extrabold text-white text-4xl md:text-5xl lg:text-6xl text-center transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+                    Project 1
+                  </h3>
+                  <p class="font-semibold text-white text-lg md:text-xl text-center mt-4 px-6 lg:px-12 transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores blanditiis voluptas porro laborum! Impedit explicabo eligendi.
+                  </p>
+                  <a href="#" class="mt-6 text-white text-2xl font-bold hover:underline transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+                    View Project
+                  </a>
+                </div>
+              </div>
+
+              <!-- Second Project -->
+              <div class="work relative overflow-hidden h-[44rem] rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500 flex flex-col justify-between">
+                <img
+                  src="/images/aurora1-2048px-6.jpg"
+                  alt="Work 2"
+                  class="block w-full object-center transition-transform duration-300 hover:scale-110 hover:brightness-110 rounded-xl"
+                />
+                <div class="layer absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 transition-opacity duration-500 hover:opacity-100">
+                  <h3 class="font-extrabold text-white text-4xl md:text-5xl lg:text-6xl text-center transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+                    Project 2
+                  </h3>
+                  <p class="font-semibold text-white text-lg md:text-xl text-center mt-4 px-6 lg:px-12 transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores blanditiis voluptas porro laborum! Impedit explicabo eligendi.
+                  </p>
+                  <a href="#" class="mt-6 text-white text-2xl font-bold hover:underline transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+                    View Project
+                  </a>
+                </div>
+              </div>
+
+              <!-- Third Project -->
+              <div class="work relative overflow-hidden h-[44rem] rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500 flex flex-col justify-between">
+                <img
+                  src="/images/aurora1-2048px-6.jpg"
+                  alt="Work 3"
+                  class="block w-full object-center transition-transform duration-300 hover:scale-110 hover:brightness-110 rounded-xl"
+                />
+                <div class="layer absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 transition-opacity duration-500 hover:opacity-100">
+                  <h3 class="font-extrabold text-white text-4xl md:text-5xl lg:text-6xl text-center transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+                    Project 3
+                  </h3>
+                  <p class="font-semibold text-white text-lg md:text-xl text-center mt-4 px-6 lg:px-12 transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores blanditiis voluptas porro laborum! Impedit explicabo eligendi.
+                  </p>
+                  <a href="#" class="mt-6 text-white text-2xl font-bold hover:underline transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>     
+          <section id="contact" class="min-h-screen w-full py-16">
+            <h1 class="text-3xl md:text-7xl font-extrabold text-midnightBlue mt-8">Contact Me</h1>
+          </section>   
 </body>
 </html>
