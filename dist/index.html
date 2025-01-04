@@ -67,49 +67,55 @@
         transform: scale(1.1);
     }
     
-    /* Optional - additional hover effect for smoothness */
     .transition-all {
         transition: all 0.3s ease;
     }
   </style>
 </head>
 <body class="bg-softCreamWhite px-5 py-2 md:px-10 lg:px-20 xl:px-40 mx-8 sm:mx-4 md:mx-2 lg:mx-0 font-faustina">
-<header class="font-faustina fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md">
-  <nav class="h-12 md:h-16 lg:h-20 w-full flex flex-row font-bold text-xl px-1 align-middle">
-    <img src="/images/logo.png" alt="Name" class="w-1/10 h-full"> <!-- Adjusted logo margin -->
-    <ul class="flex flex-row items-center w-full px-10 justify-evenly whitespace-nowrap">
-      <li class="relative group">
-        <a href="#home" class="text-black">Home</a>
-        <span class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"></span>
-      </li>
-      <li class="relative group">
-        <a href="#about" class="text-black">About</a>
-        <span class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"></span>
-      </li>
-      <li class="relative group">
-        <a href="#portfolio" class="text-black">Portfolio</a>
-        <span class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"></span>
-      </li>
-      <li class="relative group">
-        <a href="#contact" class="text-black">Contact Me</a>
-        <span class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"></span>
-      </li>
-    </ul>
-  </nav>
-</header>
-    <main>
-    <section id="home" class="flex flex-row min-h-screen w-full opacity-0 animate-fadeIn">
-      <div class="flex mt-32 w-1/2">
-          <div class="w-[38rem] h-[38rem] rounded-full border-4 border-black overflow-hidden hover:scale-105 transition-all duration-300">
+
+  <!-- Navigation Bar -->
+  <header class="font-faustina fixed top-0 left-0 w-full z-50 bg-white/80 backdrop-blur-md">
+    <nav class="h-12 md:h-16 lg:h-20 w-full flex flex-row font-bold text-xl px-1 align-middle">
+      <img src="/images/logo.png" alt="Name" class="w-1/10 h-full"> 
+      <ul class="flex flex-row items-center w-full px-10 justify-evenly whitespace-nowrap">
+        <li class="relative group">
+          <a href="#home" class="text-black">Home</a>
+          <span class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"></span>
+        </li>
+        <li class="relative group">
+          <a href="#about" class="text-black">About</a>
+          <span class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"></span>
+        </li>
+        <li class="relative group">
+          <a href="#portfolio" class="text-black">Portfolio</a>
+          <span class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"></span>
+        </li>
+        <li class="relative group">
+          <a href="#contact" class="text-black">Contact Me</a>
+          <span class="absolute left-0 bottom-[-6px] h-[3px] w-0 bg-warmBeige transition-all duration-500 group-hover:w-full"></span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Home Page -->
+    <section id="home" class="flex flex-col items-center sm:flex-row min-h-screen w-full opacity-0 animate-fadeIn">
+      <!-- Image -->
+      <div class="flex mt-16 sm:mt-32">
+          <div class="2xl:w-[38rem] 2xl:h-[38rem] xl:w-[34rem] xl:h-[34rem] lg:w-[30rem] lg:h-[30rem] md:w-[26rem] md:h-[26rem] sm:w-[22rem] sm:h-[22rem] rounded-full border-4 border-black overflow-hidden hover:scale-105 transition-all duration-300">
           <img src="/images/sampleAvatar.webp" alt="Test" class="w-full h-full object-cover transition-transform duration-300 ease-in-out hover:scale-110">
           </div>
-      </div>              
-      <div class="w-full p-4 mx-14 mt-48 text-navyBlue font-serif">
-          <h1 class="text-5xl opacity-0 animate-fadeIn delay-200">👋 Hi, <span class="font-extrabold text-lightCyan">I'm Kevin Tran</span></h1>
-          <p class="text-lg md:text-2xl lg:text-3xl text-gray-800 mt-7 leading-relaxed opacity-0 animate-fadeIn delay-400">
+      </div>    
+      
+      <!-- Text -->
+      <div class="w-full p-4 mx-14 mt-8 sm:mt-48 text-navyBlue font-serif">
+          <h1 class="2xl:text-5xl xl:text-4xl lg:text-3xl m:text-2xl sm:text-xl text-lg opacity-0 animate-fadeIn delay-200">👋 Hi, <span class="font-extrabold text-lightCyan">I'm Kevin Tran</span></h1>
+          <p class="text-lg sm:text-sm md:text-l lg:text-xl xl:text-2xl 2xl:text-3xl text-gray-800 mt-7 leading-relaxed opacity-0 animate-fadeIn delay-400">
           I am a <span class="font-semibold text-indigo-600">first-year Computer Engineering student</span> at the <span class="font-semibold text-indigo-600">University of Waterloo</span> and this is my first personal website where you can learn more about me!
           </p>
-          <h2 class="text-4xl font-bold text-navyBlue mb-3 mt-12 opacity-0 animate-fadeIn delay-600">Connect with Me</h2>
+          <h2 class="text-m sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-navyBlue mb-3 mt-12 opacity-0 animate-fadeIn delay-600">Connect with Me</h2>
           <ul class="flex justify-start space-x-8 opacity-0 animate-fadeIn delay-800">
           <li>
               <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-3xl text-teal-500 hover:text-teal-600 hover:scale-110 transition-all duration-300">
@@ -137,230 +143,237 @@
               </a>
           </li>
           </ul>
-          <a href="/path/to/your-resume.pdf" download="Kevin_Tran_Resume.pdf" class="inline-block bg-lightCyan text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-teal-600 transition-all duration-300 mt-12">
+          <a href="/path/to/your-resume.pdf" download="Kevin_Tran_Resume.pdf" class="inline-block bg-lightCyan text-white 2xl:text-lg xl:text-md lg:text-md md:text-md sm:text-md text-md font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-teal-600 transition-all duration-300 mt-12">
           Download My Resume
           </a>              
       </div>
-      </section>
-      <section id="about" class="min-h-screen w-full flex flex-col lg:flex-row items-center">
-        <!-- Image Container -->
-        <div class="flex flex-col lg:flex-row w-full">
-          <div class="w-full lg:w-1/2 flex justify-center items-start">
-            <div class="rounded-3xl border-4 w-full max-w-[38rem] h-auto overflow-hidden bg-warmBeige">
-              <img src="/images/image-removebg-preview (2).png" alt="Avatar" class="w-full h-full object-contain">
-            </div>
-          </div>
+    </section>
+
+    <!-- About Secion -->
+    <section id="about" class="min-h-screen w-full flex flex-col lg:flex-row items-center">
       
-          <!-- Text Content -->
-          <div class=" mx-4 px-4 flex flex-col w-full">
-            <h1 class="text-3xl md:text-7xl font-extrabold text-midnightBlue">About Me</h1>
-            <p class="mt-5 text-lg md:text-3xl text-navyBlue whitespace-normal ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdietimperdietimperdietimperdietimperdietimperdietimperdie wafwafawfawfwt.
-            </p>
-            <div class="tab-titles flex flex-col md:flex-row mt-7 text-3xl text-midnightBlue font-extrabold">
-              <p class="tab-item" onclick="opentab('skills')">Skills</p>
-              <p class="tab-item mt-2 md:mt-0 md:mx-12" onclick="opentab('experience')">Experience</p>
-              <p class="tab-item" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-items">
-              <ul class="space-y-8 mt-5 tab-contents" id="skills">
-                <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
-                  <span class="font-bold">Test1</span><br>Designer
-                </li>
-                <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
-                  <span class="font-bold">Test2</span><br>Developer
-                </li>
-                <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
-                  <span class="font-bold">Test3</span><br>Artist
-                </li>
-              </ul>
-              <ul class="space-y-8 mt-5 hidden tab-contents" id="experience">
-                <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
-                  <span class="font-bold">Test1D</span><br>Designer
-                </li>
-                <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
-                  <span class="font-bold">Test2D</span><br>Developer
-                </li>
-                <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
-                  <span class="font-bold">Test3D</span><br>Artist
-                </li>
-              </ul>
-              <ul class="space-y-8 mt-5 hidden tab-contents" id="education">
-                <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
-                  <span class="font-bold">Test1E</span><br>Designer
-                </li>
-                <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
-                  <span class="font-bold">Test2E</span><br>Developer
-                </li>
-                <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
-                  <span class="font-bold">Test3E</span><br>Artist
-                </li>
-              </ul>
-            </div>
+      <!-- Image Container -->
+      <div class="flex flex-col lg:flex-row w-full">
+        <div class="w-full lg:w-1/2 flex justify-center items-start">
+          <div class="rounded-3xl border-4 w-full max-w-[38rem] h-auto overflow-hidden bg-warmBeige">
+            <img src="/images/image-removebg-preview (2).png" alt="Avatar" class="w-full h-full object-contain">
           </div>
         </div>
-      </section>
-      <script>
-        var tablinks = document.getElementsByClassName("tab-item");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-      
-        function opentab(tabname) {
-          // Remove active-link from all tab items
-          for (var i = 0; i < tablinks.length; i++) {
-            tablinks[i].classList.remove("active-link");
-          }
-          
-          // Remove active-tab from all tab contents
-          for (var i = 0; i < tabcontents.length; i++) {
-            tabcontents[i].classList.add("hidden");
-          }
-      
-          // Add active-link to the clicked tab
-          document.querySelector(`[onclick="opentab('${tabname}')"]`).classList.add("active-link");
-      
-          // Show the content corresponding to the clicked tab
-          document.getElementById(tabname).classList.remove("hidden");
+    
+        <!-- Text Content -->
+        <div class=" mx-4 px-4 flex flex-col w-full">
+          <h1 class="text-3xl md:text-7xl font-extrabold text-midnightBlue">About Me</h1>
+          <p class="mt-5 text-lg md:text-3xl text-navyBlue whitespace-normal ">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdietimperdietimperdietimperdietimperdietimperdietimperdie wafwafawfawfwt.
+          </p>
+          <div class="tab-titles flex flex-col md:flex-row mt-7 text-3xl text-midnightBlue font-extrabold">
+            <p class="tab-item" onclick="opentab('skills')">Skills</p>
+            <p class="tab-item mt-2 md:mt-0 md:mx-12" onclick="opentab('experience')">Experience</p>
+            <p class="tab-item" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-items">
+            <ul class="space-y-8 mt-5 tab-contents" id="skills">
+              <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
+                <span class="font-bold">Test1</span><br>Designer
+              </li>
+              <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
+                <span class="font-bold">Test2</span><br>Developer
+              </li>
+              <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
+                <span class="font-bold">Test3</span><br>Artist
+              </li>
+            </ul>
+            <ul class="space-y-8 mt-5 hidden tab-contents" id="experience">
+              <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
+                <span class="font-bold">Test1D</span><br>Designer
+              </li>
+              <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
+                <span class="font-bold">Test2D</span><br>Developer
+              </li>
+              <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
+                <span class="font-bold">Test3D</span><br>Artist
+              </li>
+            </ul>
+            <ul class="space-y-8 mt-5 hidden tab-contents" id="education">
+              <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
+                <span class="font-bold">Test1E</span><br>Designer
+              </li>
+              <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
+                <span class="font-bold">Test2E</span><br>Developer
+              </li>
+              <li class="text-2xl text-navyBlue transform transition-all duration-300 hover:text-lightCyan hover:bg-midnightBlue hover:shadow-lg hover:scale-105 hover:p-4 rounded-xl border-2 border-transparent hover:border-lightCyan">
+                <span class="font-bold">Test3E</span><br>Artist
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-item");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+    
+      function opentab(tabname) {
+        // Remove active-link from all tab items
+        for (var i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active-link");
         }
-      </script>
-      <section id="portfolio" class="min-h-screen w-full py-16">
-        <h1 class="text-3xl md:text-7xl font-extrabold text-midnightBlue mt-8">Portfolio</h1>
-        <div class="work-list grid grid-cols-3 gap-10 mt-16 h-full">
-          <!-- First Project -->
-          <div class="work relative overflow-hidden h-[44rem] rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500 flex flex-col justify-between">
-            <img
-              src="/images/aurora1-2048px-6.jpg"
-              alt="Work 1"
-              class="block w-full object-center transition-transform duration-300 hover:scale-110 hover:brightness-110 rounded-xl"
-            />
-            <div class="layer absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 transition-opacity duration-500 hover:opacity-100">
-              <h3 class="font-extrabold text-white text-4xl md:text-5xl lg:text-6xl text-center transform transition-transform duration-300 ease-in-out hover:translate-y-2">
-                Project 1
-              </h3>
-              <p class="font-semibold text-white text-lg md:text-xl text-center mt-4 px-6 lg:px-12 transform transition-transform duration-300 ease-in-out hover:translate-y-2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores blanditiis voluptas porro laborum! Impedit explicabo eligendi.
-              </p>
-              <a href="#" class="mt-6 text-white text-2xl font-bold hover:underline transform transition-transform duration-300 ease-in-out hover:translate-y-2">
-                View Project
-              </a>
-            </div>
-          </div>
+        
+        // Remove active-tab from all tab contents
+        for (var i = 0; i < tabcontents.length; i++) {
+          tabcontents[i].classList.add("hidden");
+        }
+    
+        // Add active-link to the clicked tab
+        document.querySelector(`[onclick="opentab('${tabname}')"]`).classList.add("active-link");
+    
+        // Show the content corresponding to the clicked tab
+        document.getElementById(tabname).classList.remove("hidden");
+      }
+    </script>
 
-          <!-- Second Project -->
-          <div class="work relative overflow-hidden h-[44rem] rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500 flex flex-col justify-between">
-            <img
-              src="/images/aurora1-2048px-6.jpg"
-              alt="Work 2"
-              class="block w-full object-center transition-transform duration-300 hover:scale-110 hover:brightness-110 rounded-xl"
-            />
-            <div class="layer absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 transition-opacity duration-500 hover:opacity-100">
-              <h3 class="font-extrabold text-white text-4xl md:text-5xl lg:text-6xl text-center transform transition-transform duration-300 ease-in-out hover:translate-y-2">
-                Project 2
-              </h3>
-              <p class="font-semibold text-white text-lg md:text-xl text-center mt-4 px-6 lg:px-12 transform transition-transform duration-300 ease-in-out hover:translate-y-2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores blanditiis voluptas porro laborum! Impedit explicabo eligendi.
-              </p>
-              <a href="#" class="mt-6 text-white text-2xl font-bold hover:underline transform transition-transform duration-300 ease-in-out hover:translate-y-2">
-                View Project
-              </a>
-            </div>
-          </div>
-
-          <!-- Third Project -->
-          <div class="work relative overflow-hidden h-[44rem] rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500 flex flex-col justify-between">
-            <img
-              src="/images/aurora1-2048px-6.jpg"
-              alt="Work 3"
-              class="block w-full object-center transition-transform duration-300 hover:scale-110 hover:brightness-110 rounded-xl"
-            />
-            <div class="layer absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 transition-opacity duration-500 hover:opacity-100">
-              <h3 class="font-extrabold text-white text-4xl md:text-5xl lg:text-6xl text-center transform transition-transform duration-300 ease-in-out hover:translate-y-2">
-                Project 3
-              </h3>
-              <p class="font-semibold text-white text-lg md:text-xl text-center mt-4 px-6 lg:px-12 transform transition-transform duration-300 ease-in-out hover:translate-y-2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores blanditiis voluptas porro laborum! Impedit explicabo eligendi.
-              </p>
-              <a href="#" class="mt-6 text-white text-2xl font-bold hover:underline transform transition-transform duration-300 ease-in-out hover:translate-y-2">
-                View Project
-              </a>
-            </div>
+    
+    <section id="portfolio" class="min-h-screen w-full py-16">
+      <h1 class="text-3xl md:text-7xl font-extrabold text-midnightBlue mt-8">Portfolio</h1>
+      <div class="work-list grid grid-rows-3 sm:grid-cols-3 gap-10 mt-16 h-full">
+        <!-- First Project -->
+        <div class="work relative overflow-hidden h-[44rem] rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500 flex flex-col justify-between">
+          <img
+            src="/images/aurora1-2048px-6.jpg"
+            alt="Work 1"
+            class="block w-full object-center transition-transform duration-300 hover:scale-110 hover:brightness-110 rounded-xl"
+          />
+          <div class="layer absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 transition-opacity duration-500 hover:opacity-100">
+            <h3 class="font-extrabold text-white text-4xl md:text-5xl lg:text-6xl text-center transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+              Project 1
+            </h3>
+            <p class="font-semibold text-white text-lg md:text-xl text-center mt-4 px-6 lg:px-12 transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores blanditiis voluptas porro laborum! Impedit explicabo eligendi.
+            </p>
+            <a href="#" class="mt-6 text-white text-2xl font-bold hover:underline transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+              View Project
+            </a>
           </div>
         </div>
-      </section>     
-      <section id="contact" class="min-h-screen w-full py-16">
-          <h1 class="text-3xl md:text-7xl font-extrabold text-midnightBlue mt-8">Contact Me</h1>
-          <div class="flex flex-row justify-between">
-          <div class="basis-[35%]">
-            <p class="mt-8 flex items-center text-navyBlue text-bold text-2xl">
-              <i class="fa-solid fa-envelope text-teal-500 mr-4 text-3xl"></i>
-              kevintran3131@gmail.com
+
+        <!-- Second Project -->
+        <div class="work relative overflow-hidden h-[44rem] rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500 flex flex-col justify-between">
+          <img
+            src="/images/aurora1-2048px-6.jpg"
+            alt="Work 2"
+            class="block w-full object-center transition-transform duration-300 hover:scale-110 hover:brightness-110 rounded-xl"
+          />
+          <div class="layer absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 transition-opacity duration-500 hover:opacity-100">
+            <h3 class="font-extrabold text-white text-4xl md:text-5xl lg:text-6xl text-center transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+              Project 2
+            </h3>
+            <p class="font-semibold text-white text-lg md:text-xl text-center mt-4 px-6 lg:px-12 transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores blanditiis voluptas porro laborum! Impedit explicabo eligendi.
             </p>
-            <p class="mt-8 flex items-center text-navyBlue text-bold text-2xl">
-              <i class="fa-solid fa-phone text-teal-500 mr-4 text-3xl"></i>
-              613-315-9819
+            <a href="#" class="mt-6 text-white text-2xl font-bold hover:underline transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+              View Project
+            </a>
+          </div>
+        </div>
+
+        <!-- Third Project -->
+        <div class="work relative overflow-hidden h-[44rem] rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-500 flex flex-col justify-between">
+          <img
+            src="/images/aurora1-2048px-6.jpg"
+            alt="Work 3"
+            class="block w-full object-center transition-transform duration-300 hover:scale-110 hover:brightness-110 rounded-xl"
+          />
+          <div class="layer absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center opacity-0 transition-opacity duration-500 hover:opacity-100">
+            <h3 class="font-extrabold text-white text-4xl md:text-5xl lg:text-6xl text-center transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+              Project 3
+            </h3>
+            <p class="font-semibold text-white text-lg md:text-xl text-center mt-4 px-6 lg:px-12 transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores blanditiis voluptas porro laborum! Impedit explicabo eligendi.
             </p>
-            <ul class="flex space-x-8 mt-10">
-              <li>
-                <a href="https://www.linkedin.com/in/yourprofile" 
-                target="_blank" 
-                class="text-3xl text-teal-500 hover:text-navyBlue hover:scale-110 transition-transform duration-300">
-                <i class="fab fa-linkedin hover:-translate-y-4 transition-transform"></i> <!-- LinkedIn Icon -->
-                </a>                 
-              </li>
-              <li>
-                  <a href="https://twitter.com/yourprofile" target="_blank" class="text-3xl text-teal-500 hover:text-navyBlue hover:scale-110 transition-transform duration-300">
-                  <i class="fab fa-twitter hover:-translate-y-4 transition-transform"></i> <!-- Twitter Icon -->
-                  </a>
-              </li>
-              <li>
-                  <a href="https://github.com/yourprofile" target="_blank" class="text-3xl text-teal-500 hover:text-navyBlue hover:scale-110 transition-transform duration-300">
-                  <i class="fab fa-github hover:-translate-y-4 transition-transform"></i> <!-- GitHub Icon -->
-                  </a>
-              </li>
-              <li>
-                  <a href="https://www.instagram.com/yourprofile" target="_blank" class="text-3xl text-teal-500 hover:text-navyBlue hover:scale-110 transition-transform duration-300">
-                  <i class="fab fa-instagram hover:-translate-y-4 transition-transform"></i> <!-- Instagram Icon -->
-                  </a>
-              </li>
-              </ul>
-              <a href="/path/to/your-resume.pdf" download="Kevin_Tran_Resume.pdf" class="inline-block bg-teal-500 text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-navyBlue transition-all duration-300 mt-12">
-                Download My Resume
-                </a>  
+            <a href="#" class="mt-6 text-white text-2xl font-bold hover:underline transform transition-transform duration-300 ease-in-out hover:translate-y-2">
+              View Project
+            </a>
           </div>
-          <div class="basis-[60%]">
-            <form class="w-full" name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" 
-                      class="w-full p-4 mt-4 bg-teal-500 border-2 shadow-lg rounded-xl placeholder-white text-white transition-transform duration-300 focus:scale-105 focus:ring-4 focus:ring-teal-300" 
-                      required>
-              <input type="email" name="Email" placeholder="Your Email" 
-                      class="w-full p-4 mt-4 bg-teal-500 border-2 shadow-lg rounded-xl placeholder-white text-white transition-transform duration-300 focus:scale-105 focus:ring-4 focus:ring-teal-300" 
-                      required>
-              <textarea name="Message" rows="6" placeholder="Your Message" 
-                        class="w-full p-4 mt-4 bg-teal-500 border-2 shadow-lg rounded-xl placeholder-white text-white transition-transform duration-300 focus:scale-105 focus:ring-4 focus:ring-teal-300">
-              </textarea>
-              <button type="submit" 
-                      class="inline-block bg-teal-500 text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-navyBlue transition-all duration-300 mt-12">
-                Submit
-              </button>
-            </form>
-            <span class="mt-5 text-xl text-navyBlue" id="msg"></span>
-          </div>
-      </section>   
-      <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbx987ZHEefG09HEtTIL6vtNTPvUhK6GloKI5oF9ncWbv6CqoNQh1FB-MLP7X5m1SDUf/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-              msg.innerHTML = "Message Sent Succesfully"
-              setTimeout(function(){
-                msg.innerHTML = ""
-              })
-            }, 5000)
-            form.reset()
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
+        </div>
+      </div>
+    </section>   
+
+    <section id="contact" class="min-h-screen w-full py-16">
+        <h1 class="text-3xl md:text-7xl font-extrabold text-midnightBlue mt-8">Contact Me</h1>
+        <div class="flex sm:flex-row flex-col justify-between">
+        <div class="basis-[35%]">
+          <p class="mt-8 flex items-center text-navyBlue text-bold text-2xl">
+            <i class="fa-solid fa-envelope text-teal-500 mr-4 text-3xl"></i>
+            kevintran3131@gmail.com
+          </p>
+          <p class="mt-8 flex items-center text-navyBlue text-bold text-2xl">
+            <i class="fa-solid fa-phone text-teal-500 mr-4 text-3xl"></i>
+            613-315-9819
+          </p>
+          <ul class="flex space-x-8 mt-10">
+            <li>
+              <a href="https://www.linkedin.com/in/yourprofile" 
+              target="_blank" 
+              class="text-3xl text-teal-500 hover:text-navyBlue hover:scale-110 transition-transform duration-300">
+              <i class="fab fa-linkedin hover:-translate-y-4 transition-transform"></i> <!-- LinkedIn Icon -->
+              </a>                 
+            </li>
+            <li>
+                <a href="https://twitter.com/yourprofile" target="_blank" class="text-3xl text-teal-500 hover:text-navyBlue hover:scale-110 transition-transform duration-300">
+                <i class="fab fa-twitter hover:-translate-y-4 transition-transform"></i> <!-- Twitter Icon -->
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/yourprofile" target="_blank" class="text-3xl text-teal-500 hover:text-navyBlue hover:scale-110 transition-transform duration-300">
+                <i class="fab fa-github hover:-translate-y-4 transition-transform"></i> <!-- GitHub Icon -->
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/yourprofile" target="_blank" class="text-3xl text-teal-500 hover:text-navyBlue hover:scale-110 transition-transform duration-300">
+                <i class="fab fa-instagram hover:-translate-y-4 transition-transform"></i> <!-- Instagram Icon -->
+                </a>
+            </li>
+            </ul>
+            <a href="/path/to/your-resume.pdf" download="Kevin_Tran_Resume.pdf" class="inline-block bg-teal-500 text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-navyBlue transition-all duration-300 mt-12">
+              Download My Resume
+              </a>  
+        </div>
+        <div class="basis-[60%]">
+          <form class="w-full" name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" 
+                    class="w-full p-4 mt-4 bg-teal-500 border-2 shadow-lg rounded-xl placeholder-white text-white transition-transform duration-300 focus:scale-105 focus:ring-4 focus:ring-teal-300" 
+                    required>
+            <input type="email" name="Email" placeholder="Your Email" 
+                    class="w-full p-4 mt-4 bg-teal-500 border-2 shadow-lg rounded-xl placeholder-white text-white transition-transform duration-300 focus:scale-105 focus:ring-4 focus:ring-teal-300" 
+                    required>
+            <textarea name="Message" rows="6" placeholder="Your Message" 
+                      class="w-full p-4 mt-4 bg-teal-500 border-2 shadow-lg rounded-xl placeholder-white text-white transition-transform duration-300 focus:scale-105 focus:ring-4 focus:ring-teal-300">
+            </textarea>
+            <button type="submit" 
+                    class="inline-block bg-teal-500 text-white text-lg font-semibold py-3 px-8 rounded-lg shadow-md hover:bg-navyBlue transition-all duration-300 mt-12">
+              Submit
+            </button>
+          </form>
+          <span class="mt-5 text-xl text-navyBlue" id="msg"></span>
+        </div>
+    </section>   
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx987ZHEefG09HEtTIL6vtNTPvUhK6GloKI5oF9ncWbv6CqoNQh1FB-MLP7X5m1SDUf/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message Sent Succesfully"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            })
+          }, 5000)
+          form.reset()
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </main>
 </body>
 </html>
