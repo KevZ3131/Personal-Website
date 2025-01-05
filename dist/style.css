@@ -840,6 +840,10 @@ video {
   min-height: 100vh;
 }
 
+.min-h-\[300px\] {
+  min-height: 300px;
+}
+
 .w-0 {
   width: 0px;
 }
@@ -1834,6 +1838,22 @@ video {
 
   .xl\:h-\[34rem\] {
     height: 34rem;
+  }
+
+  .xl\:h-\[43rem\] {
+    height: 43rem;
+  }
+
+  .xl\:h-\[440rem\] {
+    height: 440rem;
+  }
+
+  .xl\:h-\[40rem\] {
+    height: 40rem;
+  }
+
+  .xl\:h-\[38rem\] {
+    height: 38rem;
   }
 
   .xl\:w-\[30rem\] {
